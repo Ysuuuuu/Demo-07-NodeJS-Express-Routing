@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-// Customers
+// Customers b
 router.get('/', (request, response) => {
     response.status(200).json({ message: 'GET all customers' });
 });
