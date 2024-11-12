@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 
 //home page
-app.get('/', (request.response) =>{
-    response.status(200).json({message: 'API Homepage' });
+app.get('/', (request, response) => {
+    response.status(200).json({ message: 'API Homepage' });
 });
 
 // Customers  
