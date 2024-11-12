@@ -1,13 +1,9 @@
 const express = require('express');
 
-const app = express();
 const PORT = 4000;
 
+const app = express();
 app.use(express.json());
-
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
-});
 
 // Customers  
 const customerRouter = require('./Routes/customer');  
@@ -20,3 +16,7 @@ app.use('/orders', orderRouter);
 // Payments  
 const paymentRouter = require('./Routes/payment');  
 app.use('/payments', paymentRouter);
+
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+});
