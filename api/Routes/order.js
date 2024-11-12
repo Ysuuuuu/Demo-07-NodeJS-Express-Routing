@@ -22,3 +22,4 @@ router.delete('/:id', (request, response) => {
     response.status(200).json({ message: `DELETE order with id ${request.params.id}` });
 });
 
+module.exports = router

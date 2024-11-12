@@ -10,7 +10,7 @@ const customerRouter = require('./Routes/customer');
 app.use('/customers', customerRouter);  
 
 // Orders  
-const orderRouter = require('./Routes/orders');  
+const orderRouter = require('./Routes/order');  
 app.use('/orders', orderRouter);  
 
 // Payments  
