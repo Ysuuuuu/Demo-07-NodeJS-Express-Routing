@@ -8,7 +8,8 @@ app.use(express.json());
 //home page
 app.get('/', (request, response) => {
     //response.status(200).json({ message: 'API Homepage' });
-    response.send('<h1>API Homepage by RAMOS SYUTO</h1>');
+    response.send('<h1>API Homepage</h1>');
+    response.status(200).json({ message: 'Welcome to the API: <RAMOS SYUTO>' });
 });
 
 // Customers  
